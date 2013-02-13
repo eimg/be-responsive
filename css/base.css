@@ -1,0 +1,281 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size:100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+	
+html { 
+	overflow-y: scroll;
+	background: #FFF;
+}
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.618em;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.809em;
+	line-height: 1em;
+}
+
+p, ul, ol, dl, blockquote {
+		font-size: 1em;
+		line-height: 1.618em;
+		margin-bottom: 1.618em; 
+		max-width: 30em; /* Optimal width for long-form text */
+}
+		
+ul { list-style-type: disc; margin-left: 1.618em; }
+ol { list-style-type: decimal; margin-left: 1.618em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+a, a:visited { outline: none; color: #439BBD; text-decoration: underline; }    
+a:hover { outline: none; text-decoration:none; }    
+a:active, a:focus { outline: none; }
+
+/* GLOBAL STYLES
+----------------------*/
+body {
+	background: #ddd;
+}
+
+header {
+	background: #555;
+	color: #fff;
+	padding: 1em 0;
+}
+
+nav {
+	background: #333;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	border-left: 0.1em solid #555;
+}
+
+nav ul a {
+	display: block;
+	padding: 0.4em 0;
+	font-size: 0.8em;
+	color: #ddd;
+	text-decoration: none;
+}
+
+nav ul a:hover, nav ul a.active, nav ul a:active {
+	background: #444;
+}
+
+#main {
+	background: #f5f5f5;
+	padding: 0.5em;
+}
+
+.hero {
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+.figure {
+	height: 14em;
+	background: url(../img/panda.jpg) no-repeat center center;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #ddd;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.primary-action {
+	background: #247;
+	background: -moz-linear-gradient(top , #6FB5CE, #429ABD);
+	background: -webkit-linear-gradient(top , #6FB5CE, #429ABD);
+	background: linear-gradient(top , #6FB5CE, #429ABD);
+	color: #fff;
+	padding: 1em 0;
+	border: 0 none;
+	font-weight: bold;
+	border-radius: 0.5em;
+	margin-top: 1em;
+	width: 14em;
+	cursor: pointer;
+}
+
+.secondary-action {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.content {
+	overflow: hidden;
+}
+
+.box {
+	width: 20em;
+	border: 1px solid #444;
+	overflow: hidden;
+	height: 9.5em;
+	background: #666;
+}
+
+.box .img {
+	width: 40%;
+	height: 10em;
+	background: #555;
+}
+
+footer {
+	margin-top: 1.5em;
+	color: #999;
+}
+
+footer .copy {
+	color: #666;
+	margin-top: 0.8em;
+}
+
+/* MOBILE / SMALL
+----------------------*/
+#container {
+	padding: 0.809em;
+	max-width: 30em;
+	margin: auto;
+}
+
+h1 {
+	background: url(../img/logo-small.png) no-repeat 0;
+	font-size: 1.2em;
+	margin: 0 0 0 0.5em;
+	padding: 0.3em 0 0.3em 1.9em;
+	font-weight: normal;
+	color: #aaa;
+}
+
+h1 span {
+	font-weight: bold;
+	color: #ddd;
+}
+
+nav ul li {
+	width: 49%;
+	border-bottom: 0.1em solid #555;
+	text-align: center;
+}
+
+.figure {
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+.primary-action {
+	width: 100%;
+}
+
+.secondary-action {
+	display: inline-block;
+	width: 100%;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.box {
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+aside { 
+	width: 100%;
+}
+
+aside ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+aside ul li a {
+	display: block;
+	background: #429ABD;
+	color: #fff;
+	padding: 0.5em 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	border-bottom: 1px solid #6FB5CE;
+}
+
+aside ul li a:hover, aside ul li a:active {
+	background: #6FB5CE;
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+footer p {
+	width: 80%;
+	margin: auto;
+}
+
+/* CLEAR FIXES
+----------------------*/
+.cf:before, .cf:after { content: ""; display: block; }
+.cf:after { clear: both; }
+.ie6 .cf { zoom: 1 }

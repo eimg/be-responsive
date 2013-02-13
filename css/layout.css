@@ -1,0 +1,130 @@
+/* DESKTOP / BIG
+----------------------*/
+#container {
+	padding: 1.618em;
+	margin: 0 auto; 
+	max-width: 60em;
+}
+
+h1 {
+	background: url(../img/logo.png) no-repeat 0;
+	font-size: 1.8em;
+	padding: 0.5em 0 0.5em 2em;
+}
+
+nav ul {
+	max-width: 60em;
+}
+
+nav ul li {
+	border-bottom: 0 none;
+	width: auto;
+}
+
+nav ul a {
+	padding: 0.3em 1.5em;
+}
+
+.figure {
+	float: left;
+	width: 20em;
+}
+
+.welcome {
+	float: right;
+	width: 38em;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin-top: 0.3em;
+}
+
+p {
+	max-width: 100%;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.primary-action {
+	width: 20em;
+}
+
+.secondary-action {
+	width: auto;
+	margin-left: 2em;
+}
+
+.box {
+	width: 19em;
+	float: left;
+	margin-right: 0.5em;
+}
+
+aside {
+	width: 19em;
+	float: right;
+}
+
+aside ul li a {
+	padding: 0.2em 0;
+}
+
+footer {
+	font-size:  0.8em;
+}
+
+/* MOBILE / MEDIUM
+----------------------*/
+@media screen and (min-width: 30em) and (max-width: 63.236em) {
+
+#container {
+	width: 30em;
+}
+
+h1 {
+	background: url(../img/logo.png) no-repeat 0;
+	font-size: 1.4em;
+	padding: 0.4em 0 0.4em 2.3em;
+}
+
+nav ul li {
+	width: 33%;
+	border-bottom: 1px solid #555;
+}
+
+nav ul a {
+	padding: 0.4em 0;
+}
+
+.figure {
+	width: 100%;
+}
+
+.welcome {
+	max-width: 100%;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+.primary-action {
+	display: block;
+	margin: 1em auto 0 auto;
+}
+
+.secondary-action {
+	width: 100%;
+	margin: 1em 0 0 0;
+}
+
+aside {
+	width: 100%;
+}
+
+.box {
+	width: 100%;
+}
+	
+}
